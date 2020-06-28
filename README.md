@@ -1,5 +1,5 @@
 # LibraryManagement
-A C++ based console application for Library Management System
+A C++ based console application for Library Management System.
 Just a random fun-time project! 😉
 
 ## Current and Upcomming functions:
