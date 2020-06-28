@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "command": "g++",
+    "type": "shell",
+    "reveal": "always",  
+    "tasks": [
+        {
+            "label": "Build",
+            "group": "build",
+            "windows": {
+                "suppressTaskName": true,
+                "args": [
+                    "-g",
+                    "--std=c++17",
+                    "-I", "${workspaceFolder}",
+                    "main.cpp",
+                    "Menu.cpp",
+                    "Member.cpp",
+                    "-o", 
+                    "${workspaceFolder}",
+                ]
+            },
+
+            "linux": {
+                "suppressTaskName": true,
+                "args": [
+                    "-g",
+                    "--std=c++17",
+                    "main/main.cpp",
+                    "-o", 
+                    "builds/x11/Stupefy"
+                ]
+            },
+
+            "osx": {
+                "suppressTaskName": true,
+                "args": [
+                    "-g",
+                    "--std=c++17",
+                    "main/main.cpp",
+                    "-o", 
+                    "builds/osx/Stupefy"
+                ]
+            }
+        }
+    ],    
+}
