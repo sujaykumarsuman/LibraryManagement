@@ -3,8 +3,8 @@ A C++ based console application for Library Management System.
 Just a random fun-time project! 😉
 
 ## Current and Upcomming functions:
-1. Login System
-⬇ (TODOs)
+1. Login System<br>
+⬇ [TODOs]
 2. Member Management
 3. Book Management
 4. Book Search
