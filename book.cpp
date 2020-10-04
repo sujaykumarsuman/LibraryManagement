@@ -1,13 +1,14 @@
 #include<iostream>
 #include<fstream>
 #include "book.h"
+
 void Book::setBook(){
 	std::cout<<"Enter the Book Details \n";
 	std::cout<<"Enter the Book Name:";
 	std::cin.getline(bookName,60);
 	//get the name of the book in CAPS
 	for(int i=0;bookName[i]!='\0';i++){
-		if(bookName[i]>=97 and bookName[i]<=122)
+		if(bookName[i]>='a' && bookName[i]<='z')
 			bookName[i]-=32;
 	}
 	std::cout<<"Enter the Author's Name:";
